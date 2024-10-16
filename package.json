@@ -14,7 +14,8 @@
 		"ghost-theme-locales": "./cli.js"
 	},
 	"files": [
-		"cli.js"
+		"cli.js",
+		"lib"
 	],
 	"keywords": [
 		"cli",
