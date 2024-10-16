@@ -1,0 +1,39 @@
+{
+	"name": "ghost-theme-locales",
+	"version": "0.0.1",
+	"description": "CLI tool to create locale json files in Ghost themes",
+	"license": "MIT",
+	"repository": {
+	  "type": "git",
+	  "url": "git@github.com:priority-vision/ghost-theme-locales.git"
+	},
+	"author": "Priority Vision <https://priority.vision>",
+	"type": "module",
+	"bin": {
+		"gtl": "./cli.js",
+		"ghost-theme-locales": "./cli.js"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli",
+		"ghost",
+		"theme",
+		"locales",
+		"json",
+		"translation"
+	],
+	"scripts": {
+		"test": "ava"
+	},
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"glob": "^11.0.0",
+		"meow": "^13.2.0",
+		"ora": "^8.1.0"
+	},
+	"devDependencies": {
+		"ava": "^6.1.3"
+	}
+}
