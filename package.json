@@ -4,8 +4,8 @@
 	"description": "CLI tool to create locale json files in Ghost themes",
 	"license": "MIT",
 	"repository": {
-	  "type": "git",
-	  "url": "git@github.com:priority-vision/ghost-theme-locales.git"
+		"type": "git",
+		"url": "git@github.com:priority-vision/ghost-theme-locales.git"
 	},
 	"author": "Priority Vision <https://priority.vision>",
 	"type": "module",
