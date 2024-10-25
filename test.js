@@ -40,6 +40,13 @@ test('extractTranslatableStrings: should handle parentheses', t => {
 		`),
 		['Hello', 'World']
 	);
+	t.deepEqual(
+		extractTranslatableStrings(`
+			{{> "components/image" size="32" alt=(t 'Hello {tag}' tag=name)}}
+			(t 'World {tag}' tag='test')
+		`),
+		['Hello {tag}', 'World {tag}']
+	);
 
 	// Single quotes.
 	t.deepEqual(
@@ -47,6 +54,13 @@ test('extractTranslatableStrings: should handle parentheses', t => {
 			This is a test (t 'Hello') and another (t 'World')
 		`),
 		['Hello', 'World']
+	);
+	t.deepEqual(
+		extractTranslatableStrings(`
+			{{> "components/image" size="32" alt=(t "Hello {tag}" tag=name)}}
+			(t "World {tag}" tag="test")
+		`),
+		['Hello {tag}', 'World {tag}']
 	);
 });
 
