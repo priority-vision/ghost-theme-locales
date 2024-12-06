@@ -33,6 +33,35 @@ test('extractTranslatableStrings: should handle brackets', t => {
 	);
 });
 
+test('extractTranslatableStrings: should handle brackets with tilde', t => {
+	t.deepEqual(
+		extractTranslatableStrings(`
+			{{~t "This is"}} a test {{t "Hello"~}} and another {{~t "World"~}}
+		`),
+		['This is', 'Hello', 'World']
+	);
+	t.deepEqual(
+		extractTranslatableStrings(`
+			{{{~t "This is"}}} a test {{{t "Hello"~}}} and another {{{~t "World"~}}}
+		`),
+		['This is', 'Hello', 'World']
+	);
+
+	// Single quotes.
+	t.deepEqual(
+		extractTranslatableStrings(`
+			{{~t 'This is'}} a test {{t 'Hello'~}} and another {{~t 'World'~}}
+		`),
+		['This is', 'Hello', 'World']
+	);
+	t.deepEqual(
+		extractTranslatableStrings(`
+			{{{~t 'This is'}}} a test {{{t 'Hello'~}}} and another {{{~t 'World'~}}}
+		`),
+		['This is', 'Hello', 'World']
+	);
+});
+
 test('extractTranslatableStrings: should handle parentheses', t => {
 	t.deepEqual(
 		extractTranslatableStrings(`
