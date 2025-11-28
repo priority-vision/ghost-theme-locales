@@ -1,7 +1,8 @@
 # Changelog
 
-## [0.0.5] - Nov 28, 2025
+## [0.0.6] - Nov 28, 2025
 
+- added types
 - export main function `extractTranslatableStrings` to use in 3rd-party libs
 
 ## [0.0.4] - Dec 6, 2024
