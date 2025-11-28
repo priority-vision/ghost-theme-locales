@@ -72,7 +72,7 @@ gtl create [options]
 ## Developer Setup
 
 1. Fork this repo
-2. `git clone https://github.com/<your-username>/ghost-theme-locales.git path/to/your/workspace`
+2. `git clone https://github.com/priority-vision/ghost-theme-locales.git path/to/your/workspace`
 3. `cd path/to/your/workspace`
 4. `npm install`
 
