@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.5] - Nov 28, 2025
+
+- export main function `extractTranslatableStrings` to use in 3rd-party libs
+
 ## [0.0.4] - Dec 6, 2024
 
 - added support for tilde symbol in brackets like `{{t "Hello"~}}` or `{{~t "World"~}}`
