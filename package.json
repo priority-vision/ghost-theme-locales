@@ -10,9 +10,16 @@
 	"author": "Priority Vision <https://priority.vision>",
 	"type": "module",
 	"main": "./index.js",
+	"types": "./index.d.ts",
 	"exports": {
-		".": "./index.js",
-		"./extract-translatable-strings": "./lib/extract-translatable-strings.js"
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./extract-translatable-strings": {
+			"types": "./lib/extract-translatable-strings.d.ts",
+			"default": "./lib/extract-translatable-strings.js"
+		}
 	},
 	"bin": {
 		"gtl": "./cli.js",
@@ -21,6 +28,7 @@
 	"files": [
 		"cli.js",
 		"index.js",
+		"index.d.ts",
 		"lib"
 	],
 	"keywords": [
