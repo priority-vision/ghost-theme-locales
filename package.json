@@ -40,15 +40,19 @@
 		"translation"
 	],
 	"scripts": {
-		"test": "ava"
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"chalk": "^5.3.0",
-		"glob": "^11.0.0",
-		"meow": "^13.2.0",
-		"ora": "^8.1.1"
+		"chalk": "^5.6.2",
+		"glob": "^13.0.6",
+		"meow": "^14.1.0",
+		"ora": "^9.3.0"
 	},
 	"devDependencies": {
-		"ava": "^6.2.0"
+		"@types/node": "^24.5.2",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
 	}
 }
